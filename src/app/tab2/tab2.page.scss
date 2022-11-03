@@ -1,0 +1,24 @@
+ion-menu::part(backdrop) {
+    background-color: rgba(0, 255, 170, 0.562);
+}
+
+ion-menu::part(container) {
+    border-radius: 0 20px 20px 0;
+    box-shadow: 4px 0px 16px rgba(14, 248, 139, 0.18);
+}
+
+ion-title {
+    color: rgb(0, 201, 77);
+}
+
+ion-card-title {
+    color: rgb(4, 116, 47);
+}
+
+ion-card {
+    margin-top: 10px;
+}
+
+ion-toolbar.large-title-fix {
+    padding-top: env(safe-area-inset-top);
+}
