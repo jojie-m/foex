@@ -1,7 +1,9 @@
     svg {
+        margin-left: 20px;
         position: absolute;
-        width: 340px;
-        height: 376px;
+        width: 260px;
+        height: 300px;
+        margin-right: 10px;
     }
     
     ion-input {
@@ -27,6 +29,12 @@
     }
     
     p {
+        font-family: 'Alata', sans-serif;
         margin-left: 10px;
         font-size: small;
+    }
+    
+    h1 {
+        font-family: 'Alata', sans-serif;
+        margin: 20px;
     }
