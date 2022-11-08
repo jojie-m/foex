@@ -14,32 +14,33 @@
 <p> .
 </p>
 <ion-content>
-    <ion-item fill="outline">
-        <ion-label position="floating">
-            <p>Enter Username</p>
-        </ion-label>
-        <ion-input placeholder="write your username"></ion-input>
-    </ion-item>
-    <ion-item fill="outline">
-        <ion-label position="floating">
-            <p>Email</p>
-        </ion-label>
-        <ion-input type="email" ngModel email></ion-input>
-        <ion-note slot="helper">
-            <p>Enter a valid email</p>
-        </ion-note>
-        <ion-note slot="error">Invalid email</ion-note>
-    </ion-item>
-    <ion-item fill="outline">
-        <ion-label position="floating">
-            <p>Enter password</p>
-        </ion-label>
-        <app-show-hide-password>
-            <ion-input type="password" placeholder="write your password"></ion-input>
-        </app-show-hide-password>
-    </ion-item>
-    <ion-button color="success">log in</ion-button>
-    <p>dont have an account?
-        <a href="/tabs/tab3">sign up here</a></p>
-
+    <form (ngSubmit)="logForm()">
+        <ion-item fill="outline">
+            <ion-label position="floating">
+                <p>Enter Username</p>
+            </ion-label>
+            <ion-input placeholder="write your username"></ion-input>
+        </ion-item>
+        <ion-item fill="outline">
+            <ion-label position="floating">
+                <p>Email</p>
+            </ion-label>
+            <ion-input type="email" ngModel email></ion-input>
+            <ion-note slot="helper">
+                <p>Enter a valid email</p>
+            </ion-note>
+            <ion-note slot="error">Invalid email</ion-note>
+        </ion-item>
+        <ion-item fill="outline">
+            <ion-label position="floating">
+                <p>Enter password</p>
+            </ion-label>
+            <app-show-hide-password>
+                <ion-input type="password" placeholder="write your password"></ion-input>
+            </app-show-hide-password>
+        </ion-item>
+        <ion-button color="success">log in</ion-button>
+        <p>dont have an account?
+            <a href="/tabs/tab3">sign up here</a></p>
+    </form>
 </ion-content>
