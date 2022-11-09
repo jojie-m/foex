@@ -121,10 +121,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-    <h1>welcome to foex</h1>
-    <form (ngSubmit)="logForm()">
-        <ion-button color="success">log in</ion-button>
+    <div class="signin" align="center">
+        <h1>welcome to foex</h1>
+        <form>
+            <ion-item lines="full">
+                <ion-label position="floating">
+                    <p>username</p>
+                </ion-label>
+                <ion-input type="text" required></ion-input>
+            </ion-item>
+            <ion-item lines="full">
+                <ion-label position="floating">
+                    <p>Password
+                    </p>
+                </ion-label>
+                <ion-input type="password" required></ion-input>
+            </ion-item><a [routerLink]="['/forgot-password']" class="small-text">Forgot Password?</a>
+        </form>
+        <ion-button type="submit" color="success">log in</ion-button>
         <p>dont have an account?
             <a href="/tabs/tab3">sign up here</a></p>
-    </form>
+    </div>
 </ion-content>

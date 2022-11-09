@@ -1,7 +1,8 @@
 svg {
+    margin-top: 10px;
     position: absolute;
-    width: 200px;
-    height: 308px;
+    width: 260px;
+    height: 310px;
     margin-left: 20px;
     margin-right: 10px;
 }
@@ -29,6 +30,12 @@ ion-button {
 }
 
 p {
+    font-family: 'Alata', sans-serif;
     margin-left: 10px;
     font-size: small;
+}
+
+h1 {
+    font-family: 'Alata', sans-serif;
+    margin: 20px;
 }
